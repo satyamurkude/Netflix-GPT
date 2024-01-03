@@ -4,6 +4,7 @@ import { checkValidations, isEmailValid, isPasswordValid, isNameValid } from "..
 import {  createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
+import { USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
   const Navigate=useNavigate();
@@ -41,7 +42,7 @@ if (validationResult=== "false") return { errorMessage:"Please enter a valid nam
     // Signed up 
     const user = userCredential.user;
     updateProfile(user, {
-      displayName: name, photoURL:"https://media.licdn.com/dms/image/D5603AQFxwumMToFGYA/profile-displayphoto-shrink_400_400/0/1698640734427?e=1709164800&v=beta&t=42VrLeux-w-nQS08zZVVwV0kHphaFWaxXFgoMcoRvvc"
+      displayName: name, photoURL:USER_AVATAR
     }).then(() => {
       Navigate("/browse")
       // ...
