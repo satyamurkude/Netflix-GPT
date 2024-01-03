@@ -49,7 +49,7 @@ return()=>{
 },[])
 
   return (
-    <div className='w-full absolute z-10 px-8 py-2 bg-gradient-to-b from-black flex justify-between items-center'>
+    <div className='w-full absolute z-10 px-8 py-2 bg-gradient-to-b from-gray-800 flex justify-between items-center'>
     <img className='w-48' src={LOGO} alt="logo"/>
     { user && (
       <div className="flex items-center">

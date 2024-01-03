@@ -6,7 +6,7 @@ const MovieList = ({ title, movies }) => {
     
   return (
 <div className='px-6 py-1 '>
-<h1 className='text-2xl py-4 font-serif text-white -z-20'>{title}</h1>
+<h1 className='text-2xl py-3 font-serif text-white -z-20'>{title}</h1>
     <div className='flex overflow-x-scroll'>
 
         <div className='flex '> 
