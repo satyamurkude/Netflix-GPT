@@ -4,7 +4,7 @@ import { checkValidations, isEmailValid, isPasswordValid, isNameValid } from "..
 import {  createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
-import { USER_AVATAR } from '../utils/constants';
+import { MAIN_BG, USER_AVATAR } from '../utils/constants';
 
 const Login = () => {
   const Navigate=useNavigate();
@@ -95,7 +95,7 @@ signInWithEmailAndPassword(auth, email, password)
       <Header/>
       <img
         className="absolute"
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+        src={MAIN_BG}
         alt="bg-pic"
       />
       <form className="absolute bg-black bg-opacity-75 my-36 mx-auto right-0 left-0 p-12 rounded-xl w-3/12">
