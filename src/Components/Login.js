@@ -91,14 +91,14 @@ signInWithEmailAndPassword(auth, email, password)
   };
 
   return (
-    <div>
+    <div >
       <Header/>
       <img
-        className="absolute"
+        className="absolute  md:absolute inset-0 w-full h-full object-cover  "
         src={MAIN_BG}
         alt="bg-pic"
       />
-      <form className="absolute bg-black bg-opacity-75 my-36 mx-auto right-0 left-0 p-12 rounded-xl w-3/12">
+      <form className="absolute bg-black bg-opacity-75 my-36 mx-auto right-0 left-0 p-12 rounded-xl w-11/12 md:w-3/12">
         <h1 className="font-bold text-white text-3xl py-5">
           {signInForm ? "Sign Up" : "Sign In"}
         </h1>
