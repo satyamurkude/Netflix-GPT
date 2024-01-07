@@ -23,4 +23,4 @@ export const API_OPTIONS= {
     { identifier: "bn", name: "Bengali" },
     { identifier: "ur", name: "Urdu" }
   ];
-  
+  export const OPENAI_KEY="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"
