@@ -14,7 +14,7 @@ const MainContainer = () => {
 const{title,backdrop_path,overview,poster_path,id}=mainMovie;
 
     return (
-        <div>
+        <div className='pt-[35%] bg-black md:pt-0 bg-transparent bg-fixed'>
             <VideoTitle title={title} overview={overview}/>
             <VideoBackground movieId={id} />
         </div>

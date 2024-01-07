@@ -60,14 +60,14 @@ const handleLanguageChange=(e)=>{
 }
 
 return (
-  <div className='w-full absolute z-10 px-8 bg-gradient-to-b from-gray-800 flex justify-between items-center'>
+  <div className='w-full absolute z-10 px-3 flex flex-col bg-gradient-to-b from-gray-900 md:flex-row justify-between items-center md:bg-gradient-to-b from-gray-900 '>
   {/* Logo and GPT Search Button */}
   <div className="flex items-center">
     {/* GPT Search Button */}
    
 
     {/* Logo */}
-    <img className='w-48' src={LOGO} alt="logo"/>
+    <img className='w-48 mx-auto md:mx-0' src={LOGO} alt="logo"/>
   </div>
 
   { user && (
